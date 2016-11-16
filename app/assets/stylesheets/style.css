@@ -1,0 +1,15 @@
+html{
+    box-sizing: border-box;
+
+}
+
+*,*:after,*:before{
+    box-sizing: inherit;
+}
+
+#fuck{
+    color: cornsilk;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 5px black;
+}

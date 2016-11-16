@@ -1,6 +1,59 @@
-2016-11-15 22:09:47,243 - [INFO] - from play in pool-5-thread-4 
+2016-11-15 23:20:04,203 - [INFO] - from play in play-fork-run-akka.actor.default-dispatcher-4 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2016-11-15 22:09:56,003 - [INFO] - from play in play-internal-execution-context-1 
+2016-11-15 23:20:06,502 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-11-15 23:21:08,377 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-11-15 23:28:36,890 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-11-15 23:28:55,429 - [ERROR] - from application in New I/O worker #4 
+
+
+! @724f7lgk2 - Internal server error, for (GET) [/] ->
+
+play.forkrun.protocol.Serializers$playExceptionPickler$$anon$1: Compilation error[play.twirl.api.HtmlFormat.Appendable does not take parameters]
+	at play.forkrun.protocol.Serializers$playExceptionPickler$.unpickle(Serializers.scala:161) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileFailureUnpickler1$2$.unpickle(Serializers.scala:178) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler1$2$.unpickle(Serializers.scala:184) ~[na:na]
+	at scala.pickling.Unpickler$class.unpickleEntry(Pickler.scala:79) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler1$2$.unpickleEntry(Serializers.scala:184) ~[na:na]
+	at scala.pickling.functions$.unpickle(functions.scala:11) ~[na:na]
+	at sbt.serialization.JsonValue$$anonfun$parse$1.apply(SerializedValue.scala:104) ~[na:na]
+	at scala.util.Try$.apply(Try.scala:161) ~[scala-library.jar:na]
+	at sbt.serialization.JsonValue.parse(SerializedValue.scala:104) ~[na:na]
+	at sbt.protocol.BuildValue.value(Values.scala:11) ~[na:na]
+	at sbt.protocol.TaskSuccess.resultWithCustomThrowable(Values.scala:65) ~[na:na]
+	at sbt.protocol.TaskResult$class.result(Values.scala:56) ~[na:na]
+	at sbt.protocol.TaskSuccess.result(Values.scala:62) ~[na:na]
+	at play.forkrun.ForkRun$$anonfun$reloading$1.applyOrElse(ForkRun.scala:193) ~[na:na]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465) ~[akka-actor_2.10-2.3.4.jar:na]
+	at play.forkrun.ForkRun.aroundReceive(ForkRun.scala:148) ~[na:na]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.10-2.3.4.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.10-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:254) ~[akka-actor_2.10-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:221) ~[akka-actor_2.10-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:231) ~[akka-actor_2.10-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+
+2016-11-15 23:29:22,478 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-11-15 23:29:37,436 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-11-15 23:31:44,096 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-11-15 23:37:23,151 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-11-15 23:39:27,847 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
