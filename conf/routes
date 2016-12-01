@@ -6,3 +6,8 @@ GET /exerciseoftheday        controllers.FitnessController.exerciseOfTheDay()
 
 GET /workoutoftheday        controllers.FitnessController.workoutOfTheDay()
 
+GET /exercise/create    controllers.FitnessController.initExercise()
+
+POST /exercise/create   controllers.FitnessController.createExercise()
+
+GET /exercises    controllers.FitnessController.getList()

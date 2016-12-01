@@ -1,43 +1,57 @@
 package models;
+import play.data.validation.Constraints;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
 public class Exercise {
-    public Exercise(){}
-    
-    public Exercise(String name, Integer minutes){
+
+@Id
+private Long id;
+
+public Exercise(){
+}
+
+public Exercise(String name, Integer minutes){
         this.name = name;
         this.minutes = minutes;
-    }
-    
-    public void setName(String name){
+}
+
+public void setName(String name){
         this.name = name;
-    }
-    
-    public String getName(){
+}
+
+public String getName(){
         return this.name;
-    }
-    
-    public void setMinutes(Integer minutes){
+}
+
+public void setMinutes(Integer minutes){
         this.minutes = minutes;
-    }
-    public Integer getMinutes(){
+}
+public Integer getMinutes(){
         return this.minutes;
-    }
-    
-    @Override
-    public boolean equals(Object object){
+}
+
+@Override
+public boolean equals(Object object){
         return object instanceof Exercise && ((Exercise) object).name.equals(this.name);
-    }
-    
-    @Override
-    public int hashCode() {
+}
+
+@Override
+public int hashCode() {
         return name.hashCode() % 313;
-    }
-    
-    @Override
-    public String toString(){
+}
+
+@Override
+public String toString(){
         return String.format("Exercise{name=%s}", name);
-    }
-    
-    private String name;
-    private Integer minutes;
+}
+
+@Constraints.Required(message = "Name is required")
+private String name;
+
+@Constraints.Required(message = "Minutes are required")
+@Constraints.Min(value = 1, message = "Minutes must be more than 1")
+@Constraints.Max(value = 10 * 60, message = "Exercising for more than 10 hours a day is a bit much")
+private Integer minutes;
 }

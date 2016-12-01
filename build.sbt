@@ -1,6 +1,3 @@
 name := "my-first-app"
 version := "1.0"
-lazy val root = (project in file(".")).enablePlugins(PlayJava)
-
-
-fork in run := true
+lazy val root = (project in file(".")).enablePlugins(PlayJava, PlayEbean)
