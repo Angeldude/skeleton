@@ -7,7 +7,7 @@
 		revision="0.0.1-SNAPSHOT"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, fork-run"
-		date="20161115223403"/>
+		date="20161125095354"/>
 	<dependencies>
 		<module organisation="com.typesafe.play" name="play-test_2.10">
 			<revision name="2.3.10" status="release" pubdate="20150803000314" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="32">
@@ -22,7 +22,7 @@
 			</revision>
 		</module>
 		<module organisation="org.fluentlenium" name="fluentlenium-festassert">
-			<revision name="0.9.2" status="release" pubdate="20140127091836" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FluentLenium/FluentLenium" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="53">
+			<revision name="0.9.2" status="release" pubdate="20140127091836" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FluentLenium/FluentLenium" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="5809" time="0" location="/Users/angelman/.ivy2/cache/org.fluentlenium/fluentlenium-festassert/ivy-0.9.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/fluentlenium/fluentlenium-festassert/0.9.2/fluentlenium-festassert-0.9.2.pom"/>
 				<caller organisation="com.typesafe.play" name="play-test_2.10" conf="default, compile, runtime, master" rev="0.9.2" rev-constraint-default="0.9.2" rev-constraint-dynamic="0.9.2" callerrev="2.3.10"/>
@@ -34,7 +34,7 @@
 			</revision>
 		</module>
 		<module organisation="org.fluentlenium" name="fluentlenium-core">
-			<revision name="0.9.2" status="release" pubdate="20140127091753" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FluentLenium/FluentLenium" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="54">
+			<revision name="0.9.2" status="release" pubdate="20140127091753" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FluentLenium/FluentLenium" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="55">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="5916" time="0" location="/Users/angelman/.ivy2/cache/org.fluentlenium/fluentlenium-core/ivy-0.9.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/fluentlenium/fluentlenium-core/0.9.2/fluentlenium-core-0.9.2.pom"/>
 				<caller organisation="org.fluentlenium" name="fluentlenium-festassert" conf="compile, runtime" rev="0.9.2" rev-constraint-default="0.9.2" rev-constraint-dynamic="0.9.2" callerrev="0.9.2"/>
@@ -46,7 +46,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-java">
-			<revision name="2.39.0" status="release" pubdate="20131216162136" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="55">
+			<revision name="2.39.0" status="release" pubdate="20131216162136" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="56">
 				<metadata-artifact status="no" details="" size="7203" time="0" location="/Users/angelman/.ivy2/cache/org.seleniumhq.selenium/selenium-java/ivy-2.39.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-java/2.39.0/selenium-java-2.39.0.pom"/>
 				<caller organisation="org.fluentlenium" name="fluentlenium-core" conf="compile, runtime" rev="2.39.0" rev-constraint-default="2.39.0" rev-constraint-dynamic="2.39.0" callerrev="0.9.2"/>
 				<artifacts>
@@ -124,18 +124,6 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="commons-io" name="commons-io">
-			<revision name="2.2" status="release" pubdate="20120326111438" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/io/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="79">
-				<metadata-artifact status="no" details="" size="8009" time="0" location="/Users/angelman/.ivy2/cache/commons-io/commons-io/ivy-2.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.pom"/>
-				<caller organisation="net.sourceforge.htmlunit" name="htmlunit" conf="compile, runtime" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.4" callerrev="2.13"/>
-				<caller organisation="org.seleniumhq.selenium" name="selenium-firefox-driver" conf="compile, runtime" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="2.39.0"/>
-				<artifacts>
-					<artifact name="commons-io" type="jar" ext="jar" status="no" details="" size="173587" time="0" location="/Users/angelman/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.2.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-htmlunit-driver">
 			<revision name="2.39.0" status="release" pubdate="20131216162025" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="69">
 				<metadata-artifact status="no" details="" size="6029" time="0" location="/Users/angelman/.ivy2/cache/org.seleniumhq.selenium/selenium-htmlunit-driver/ivy-2.39.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-htmlunit-driver/2.39.0/selenium-htmlunit-driver-2.39.0.pom"/>
@@ -202,6 +190,24 @@
 					<artifact name="jetty-util" type="jar" ext="jar" status="no" details="" size="287536" time="0" location="/Users/angelman/.ivy2/cache/org.eclipse.jetty/jetty-util/jars/jetty-util-8.1.12.v20130726.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/8.1.12.v20130726/jetty-util-8.1.12.v20130726.jar"/>
 					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-io" name="commons-io">
+			<revision name="2.4" status="release" pubdate="20120612182206" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/io/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="79">
+				<metadata-artifact status="no" details="" size="8463" time="0" location="/Users/angelman/.ivy2/cache/commons-io/commons-io/ivy-2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom"/>
+				<caller organisation="net.sourceforge.htmlunit" name="htmlunit" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="2.13"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-firefox-driver" conf="compile, runtime" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="2.39.0"/>
+				<artifacts>
+					<artifact name="commons-io" type="jar" ext="jar" status="no" details="" size="185140" time="0" location="/Users/angelman/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.4"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-firefox-driver" conf="compile, runtime" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="2.39.0"/>
+				<artifacts>
 				</artifacts>
 			</revision>
 		</module>
@@ -309,7 +315,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-android-driver">
-			<revision name="2.39.0" status="release" pubdate="20131216161944" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="56">
+			<revision name="2.39.0" status="release" pubdate="20131216161944" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="57">
 				<metadata-artifact status="no" details="" size="5879" time="0" location="/Users/angelman/.ivy2/cache/org.seleniumhq.selenium/selenium-android-driver/ivy-2.39.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-android-driver/2.39.0/selenium-android-driver-2.39.0.pom"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="compile, runtime" rev="2.39.0" rev-constraint-default="2.39.0" rev-constraint-dynamic="2.39.0" callerrev="2.39.0"/>
 				<artifacts>
@@ -320,7 +326,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-remote-driver">
-			<revision name="2.39.0" status="release" pubdate="20131216161927" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="57">
+			<revision name="2.39.0" status="release" pubdate="20131216161927" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="58">
 				<metadata-artifact status="no" details="" size="6671" time="0" location="/Users/angelman/.ivy2/cache/org.seleniumhq.selenium/selenium-remote-driver/ivy-2.39.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-remote-driver/2.39.0/selenium-remote-driver-2.39.0.pom"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-iphone-driver" conf="compile, runtime" rev="2.39.0" rev-constraint-default="2.39.0" rev-constraint-dynamic="2.39.0" callerrev="2.39.0"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-safari-driver" conf="compile, runtime" rev="2.39.0" rev-constraint-default="2.39.0" rev-constraint-dynamic="2.39.0" callerrev="2.39.0"/>
@@ -412,7 +418,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-api">
-			<revision name="2.39.0" status="release" pubdate="20131216161904" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="60">
+			<revision name="2.39.0" status="release" pubdate="20131216161904" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="61">
 				<metadata-artifact status="no" details="" size="5844" time="0" location="/Users/angelman/.ivy2/cache/org.seleniumhq.selenium/selenium-api/ivy-2.39.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-api/2.39.0/selenium-api-2.39.0.pom"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-support" conf="compile, runtime" rev="2.39.0" rev-constraint-default="2.39.0" rev-constraint-dynamic="2.39.0" callerrev="2.39.0"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-remote-driver" conf="compile, runtime" rev="2.39.0" rev-constraint-default="2.39.0" rev-constraint-dynamic="2.39.0" callerrev="2.39.0"/>
@@ -423,28 +429,8 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="com.google.guava" name="guava">
-			<revision name="15.0" status="release" pubdate="20130906155249" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
-				<metadata-artifact status="no" details="" size="6073" time="0" location="/Users/angelman/.ivy2/cache/com.google.guava/guava/ivy-15.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/guava/guava/15.0/guava-15.0.pom"/>
-				<caller organisation="org.seleniumhq.selenium" name="selenium-api" conf="compile, runtime" rev="15.0" rev-constraint-default="15.0" rev-constraint-dynamic="15.0" callerrev="2.39.0"/>
-				<caller organisation="com.typesafe.play" name="play-test_2.10" conf="default, compile, runtime, master" rev="15.0" rev-constraint-default="15.0" rev-constraint-dynamic="16.0.1" callerrev="2.3.10"/>
-				<caller organisation="org.seleniumhq.selenium" name="selenium-remote-driver" conf="compile, runtime" rev="15.0" rev-constraint-default="15.0" rev-constraint-dynamic="15.0" callerrev="2.39.0"/>
-				<artifacts>
-					<artifact name="guava" type="bundle" ext="jar" status="no" details="" size="2172168" time="0" location="/Users/angelman/.ivy2/cache/com.google.guava/guava/bundles/guava-15.0.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/google/guava/guava/15.0/guava-15.0.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-			<revision name="16.0.1" status="release" pubdate="20140203174528" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
-				<metadata-artifact status="no" details="" size="5933" time="0" location="/Users/angelman/.ivy2/cache/com.google.guava/guava/ivy-16.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom"/>
-				<evicted-by rev="15.0"/>
-				<caller organisation="com.typesafe.play" name="play-test_2.10" conf="default, compile, runtime, master" rev="16.0.1" rev-constraint-default="16.0.1" rev-constraint-dynamic="16.0.1" callerrev="2.3.10"/>
-				<artifacts>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="org.json" name="json">
-			<revision name="20080701" status="release" pubdate="20080720144729" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.json.org/java/index.html" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="59">
+			<revision name="20080701" status="release" pubdate="20080720144729" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.json.org/java/index.html" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="60">
 				<license name="provided without support or warranty" url="http://www.json.org/license.html"/>
 				<metadata-artifact status="no" details="" size="2979" time="0" location="/Users/angelman/.ivy2/cache/org.json/json/ivy-20080701.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/json/json/20080701/json-20080701.pom"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-api" conf="compile, runtime" rev="20080701" rev-constraint-default="20080701" rev-constraint-dynamic="20080701" callerrev="2.39.0"/>
@@ -457,7 +443,7 @@
 			</revision>
 		</module>
 		<module organisation="cglib" name="cglib-nodep">
-			<revision name="2.1_3" status="release" pubdate="20051108171406" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cglib.sourceforge.net/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="58">
+			<revision name="2.1_3" status="release" pubdate="20051108171406" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cglib.sourceforge.net/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="59">
 				<metadata-artifact status="no" details="" size="2217" time="0" location="/Users/angelman/.ivy2/cache/cglib/cglib-nodep/ivy-2.1_3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.pom"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-remote-driver" conf="compile, runtime" rev="2.1_3" rev-constraint-default="2.1_3" rev-constraint-dynamic="2.1_3" callerrev="2.39.0"/>
 				<artifacts>
@@ -468,7 +454,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.code.findbugs" name="jsr305">
-			<revision name="2.0.3" status="release" pubdate="20131231022623" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://code.google.com/p/jsr-305/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
+			<revision name="2.0.3" status="release" pubdate="20131231022623" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://code.google.com/p/jsr-305/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="53">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2395" time="0" location="/Users/angelman/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-2.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/2.0.3/jsr305-2.0.3.pom"/>
 				<caller organisation="com.typesafe.play" name="play-test_2.10" conf="default, compile, runtime, master" rev="2.0.3" rev-constraint-default="2.0.3" rev-constraint-dynamic="2.0.3" callerrev="2.3.10"/>
@@ -526,6 +512,27 @@
 				</artifacts>
 			</revision>
 		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="16.0.1" status="release" pubdate="20140203174528" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, master(*)" position="52">
+				<metadata-artifact status="no" details="" size="5933" time="0" location="/Users/angelman/.ivy2/cache/com.google.guava/guava/ivy-16.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-api" conf="compile, runtime" rev="15.0" rev-constraint-default="15.0" rev-constraint-dynamic="15.0" callerrev="2.39.0"/>
+				<caller organisation="com.typesafe.play" name="play-test_2.10" conf="default, compile, runtime, master" rev="16.0.1" rev-constraint-default="16.0.1" rev-constraint-dynamic="16.0.1" callerrev="2.3.10"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-remote-driver" conf="compile, runtime" rev="15.0" rev-constraint-default="15.0" rev-constraint-dynamic="15.0" callerrev="2.39.0"/>
+				<artifacts>
+					<artifact name="guava" type="bundle" ext="jar" status="no" details="" size="2228009" time="0" location="/Users/angelman/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="15.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master, master(compile)" position="-1">
+				<evicted-by rev="16.0.1"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-api" conf="compile, runtime" rev="15.0" rev-constraint-default="15.0" rev-constraint-dynamic="15.0" callerrev="2.39.0"/>
+				<caller organisation="com.typesafe.play" name="play-test_2.10" conf="default, compile, runtime, master" rev="16.0.1" rev-constraint-default="16.0.1" rev-constraint-dynamic="16.0.1" callerrev="2.3.10"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-remote-driver" conf="compile, runtime" rev="15.0" rev-constraint-default="15.0" rev-constraint-dynamic="15.0" callerrev="2.39.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="javax.transaction" name="jta">
 			<revision name="1.1" status="release" pubdate="20081027212721" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://java.sun.com/products/jta" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
 				<metadata-artifact status="no" details="" size="2353" time="0" location="/Users/angelman/.ivy2/cache/javax.transaction/jta/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1.pom"/>
@@ -574,7 +581,7 @@
 		<module organisation="commons-codec" name="commons-codec">
 			<revision name="1.9" status="release" pubdate="20131220225739" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, master(*)" position="28">
 				<metadata-artifact status="no" details="" size="9850" time="0" location="/Users/angelman/.ivy2/cache/commons-codec/commons-codec/ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.pom"/>
-				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.6" callerrev="4.3.1"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="4.3.1"/>
 				<caller organisation="net.sourceforge.htmlunit" name="htmlunit" conf="compile, runtime" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.8" callerrev="2.13"/>
 				<caller organisation="com.typesafe.play" name="play_2.10" conf="default, compile, runtime, master" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="2.3.10"/>
 				<artifacts>
@@ -585,8 +592,15 @@
 			</revision>
 			<revision name="1.8" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master, master(compile)" position="-1">
 				<evicted-by rev="1.9"/>
-				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.6" callerrev="4.3.1"/>
 				<caller organisation="net.sourceforge.htmlunit" name="htmlunit" conf="compile, runtime" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.8" callerrev="2.13"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="4.3.1"/>
+				<caller organisation="com.typesafe.play" name="play_2.10" conf="default, compile, runtime, master" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="2.3.10"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master, master(compile)" position="-1">
+				<evicted-by rev="1.9"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="4.3.1"/>
 				<caller organisation="com.typesafe.play" name="play_2.10" conf="default, compile, runtime, master" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="2.3.10"/>
 				<artifacts>
 				</artifacts>
@@ -1195,9 +1209,37 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.10.4" status="release" pubdate="20140318174629" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
+			<revision name="2.10.4" status="release" pubdate="20140318174629" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
 				<metadata-artifact status="no" details="" size="2487" time="0" location="/Users/angelman/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.pom"/>
+				<evicted-by rev="2.10.6"/>
+				<caller organisation="com.typesafe.play" name="play-datacommons_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.10"/>
+				<caller organisation="com.typesafe.play" name="twirl-api_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="1.0.2"/>
+				<caller organisation="com.typesafe.play" name="play-functional_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.10"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.10.4"/>
+				<caller organisation="org.specs2" name="specs2-core_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.12"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.4"/>
+				<caller organisation="org.specs2" name="specs2-matcher-extra_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.12"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.10.4"/>
+				<caller organisation="org.specs2" name="specs2-matcher_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.12"/>
+				<caller organisation="org.scalamacros" name="quasiquotes_2.10" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="2.0.0-M7"/>
+				<caller organisation="com.typesafe.play" name="play-iteratees_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.10"/>
+				<caller organisation="org.specs2" name="specs2-common_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.12"/>
+				<caller organisation="org.scalaz" name="scalaz-core_2.10" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="7.0.6"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.10"/>
+				<caller organisation="com.typesafe.play" name="play_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.10"/>
+				<caller organisation="com.typesafe.play" name="play-test_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.10"/>
+				<caller organisation="org.specs2" name="specs2-junit_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.12"/>
+				<caller organisation="org.specs2" name="specs2-mock_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.12"/>
+				<caller organisation="org.scala-stm" name="scala-stm_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="0.7"/>
+				<caller organisation="org.specs2" name="specs2-analysis_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.12"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.10.6" status="release" pubdate="20150918053528" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.6/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, master(*), runtime(*), master(compile), compile(*)" position="0">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2487" time="0" location="/Users/angelman/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.6/scala-library-2.10.6.pom"/>
 				<caller organisation="com.typesafe.play" name="play-datacommons_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.10"/>
 				<caller organisation="com.typesafe.play" name="twirl-api_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="1.0.2"/>
 				<caller organisation="com.typesafe.play" name="play-functional_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.10"/>
@@ -1216,34 +1258,34 @@
 				<caller organisation="com.typesafe.play" name="play_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.10"/>
 				<caller organisation="com.typesafe.play" name="play-test_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.10"/>
 				<caller organisation="org.specs2" name="specs2-junit_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.12"/>
-				<caller organisation="my-first-app" name="my-first-app_2.10" conf="test, compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.0.1-SNAPSHOT"/>
+				<caller organisation="my-first-app" name="my-first-app_2.10" conf="test, compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.0.1-SNAPSHOT"/>
 				<caller organisation="org.specs2" name="specs2-mock_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.12"/>
 				<caller organisation="org.scala-stm" name="scala-stm_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="0.7"/>
 				<caller organisation="org.specs2" name="specs2-analysis_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.12"/>
 				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.3.4"/>
 				<caller organisation="org.scalaz" name="scalaz-concurrent_2.10" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="7.0.6"/>
 				<artifacts>
-					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7126372" time="0" location="/Users/angelman/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar">
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7132001" time="0" location="/Users/angelman/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.6.jar">
 						<origin-location is-local="false" location="UNKNOWN"/>
 					</artifact>
 				</artifacts>
 			</revision>
-			<revision name="2.10.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
-				<evicted-by rev="2.10.4"/>
+			<revision name="2.10.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="-1">
+				<evicted-by rev="2.10.6"/>
 				<caller organisation="org.scalamacros" name="quasiquotes_2.10" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="2.0.0-M7"/>
 				<artifacts>
 				</artifacts>
 			</revision>
 			<revision name="2.10.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
-				<evicted-by rev="2.10.4"/>
+				<evicted-by rev="2.10.6"/>
 				<caller organisation="org.scalaz" name="scalaz-core_2.10" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="7.0.6"/>
 				<caller organisation="org.scalaz" name="scalaz-concurrent_2.10" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="7.0.6"/>
 				<caller organisation="org.scalaz" name="scalaz-effect_2.10" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="7.0.6"/>
 				<artifacts>
 				</artifacts>
 			</revision>
-			<revision name="2.10.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
-				<evicted-by rev="2.10.4"/>
+			<revision name="2.10.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="-1">
+				<evicted-by rev="2.10.6"/>
 				<caller organisation="org.scala-stm" name="scala-stm_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="0.7"/>
 				<artifacts>
 				</artifacts>

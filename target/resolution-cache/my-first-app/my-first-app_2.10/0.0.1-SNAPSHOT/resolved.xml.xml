@@ -4,7 +4,7 @@
 		module="my-first-app_2.10"
 		revision="0.0.1-SNAPSHOT"
 		status="integration"
-		publication="20161115223403"
+		publication="20161125095354"
 	>
 		<description>
 		my-first-app
@@ -33,8 +33,8 @@
 		<artifact name="my-first-app_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.4" conf="scala-tool->default,optional(default)"/>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.10.4" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.6" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.10.6" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="twirl-api_2.10" rev="1.0.2" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play_2.10" rev="2.3.10" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-test_2.10" rev="2.3.10" conf="test->default(compile)"/>
