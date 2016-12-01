@@ -12,3 +12,6 @@ server.pid
 *.eml
 /dist/
 .cache
+.DS_Store/
+.sbtserver
+project/project
