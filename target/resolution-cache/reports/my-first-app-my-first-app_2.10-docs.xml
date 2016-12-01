@@ -4,16 +4,16 @@
 	<info
 		organisation="my-first-app"
 		module="my-first-app_2.10"
-		revision="0.0.1-SNAPSHOT"
+		revision="1.0"
 		conf="docs"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, fork-run"
-		date="20161125095354"/>
+		date="20161201001613"/>
 	<dependencies>
 		<module organisation="com.typesafe.play" name="play-docs_2.10">
 			<revision name="2.3.10" status="release" pubdate="20150803000611" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="2820" time="0" location="/Users/angelman/.ivy2/cache/com.typesafe.play/play-docs_2.10/ivy-2.3.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-docs_2.10/2.3.10/play-docs_2.10-2.3.10.pom"/>
-				<caller organisation="my-first-app" name="my-first-app_2.10" conf="docs" rev="2.3.10" rev-constraint-default="2.3.10" rev-constraint-dynamic="2.3.10" callerrev="0.0.1-SNAPSHOT"/>
+				<caller organisation="my-first-app" name="my-first-app_2.10" conf="docs" rev="2.3.10" rev-constraint-default="2.3.10" rev-constraint-dynamic="2.3.10" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="play-docs_2.10" type="jar" ext="jar" status="no" details="" size="7429152" time="0" location="/Users/angelman/.ivy2/cache/com.typesafe.play/play-docs_2.10/jars/play-docs_2.10-2.3.10.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-docs_2.10/2.3.10/play-docs_2.10-2.3.10.jar"/>
