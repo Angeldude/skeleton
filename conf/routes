@@ -1,0 +1,8 @@
+GET /welcome        controllers.FitnessController.welcome()
+
+GET /welcome/:name  controllers.FitnessController.welcomeWithName(name:String)
+
+GET /exerciseoftheday        controllers.FitnessController.exerciseOfTheDay()
+
+GET /workoutoftheday        controllers.FitnessController.workoutOfTheDay()
+

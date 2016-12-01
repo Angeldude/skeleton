@@ -1,0 +1,14 @@
+@(exercises: java.util.List[Exercise])
+<!doctype html>
+<html>
+    <head>
+        <title>Borge Fitness Workout of the Day</title>
+    </head>
+    <body>
+        <ol>
+            @for(exercise <- exercises){
+            <li>@exercise.getName and go @exercise.getMinutes minutes</li>
+            }
+        </ol>
+    </body>
+</html>
